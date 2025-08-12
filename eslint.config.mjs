@@ -9,6 +9,17 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [...compat.extends("next/core-web-vitals")];
+// Array ini berisi semua konfigurasi ESLint
+const eslintConfig = [
+  // Ini adalah konfigurasi dasar dari Next.js
+  ...compat.extends("next/core-web-vitals"),
+
+  // <<< TAMBAHKAN OBJEK ATURAN BARU DI SINI >>>
+  {
+    rules: {
+      "react/no-unescaped-entities": "off",
+    },
+  },
+];
 
 export default eslintConfig;
