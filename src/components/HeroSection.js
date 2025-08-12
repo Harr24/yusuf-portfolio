@@ -29,8 +29,8 @@ const HeroSection = () => {
       </p>
       {/* Description */}{" "}
       <p className="mt-4 max-w-xl text-sm sm:text-base text-gray-300 leading-relaxed">
-        Passionate about building elegant user interfaces, exploring IoT, and
-        crafting meaningful digital experiences.{" "}
+        Passionate about building elegant user interfaces, exploring IoT, and crafting meaningful
+        digital experiences.{" "}
       </p>
       {/* CTA Button */}{" "}
       <a
@@ -38,7 +38,14 @@ const HeroSection = () => {
         className="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-blue-500/30"
       >
         Lihat Proyek Saya{" "}
-      </a>{" "}
+      </a>
+      {/* Contact Info */}{" "}
+      <div className="mt-6 text-sm text-gray-400">
+        <p> Hubungi saya di: </p>{" "}
+        <a href="mailto:Yusufharrysetiawan@gmail.com" className="text-blue-400 hover:underline">
+          Yusufharrysetiawan @gmail.com{" "}
+        </a>{" "}
+      </div>{" "}
     </section>
   );
 };
